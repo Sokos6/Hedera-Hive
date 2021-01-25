@@ -5,6 +5,11 @@ import { withTranslation } from "react-i18next";
 
 import * as S from "./styles";
 
+import { transaction } from '../../client';
+
+console.log(transaction);
+
+
 const SvgIcon = lazy(() => import("../../common/SvgIcon"));
 const Button = lazy(() => import("../../common/Button"));
 
