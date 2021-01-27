@@ -39,20 +39,20 @@ const BetaAnalyze = () => {
           padding: '1rem',
           display: 'inline-block',
         }}>
-        Gatsby Stock Market App
+        Hedera Hive Crypto Analyze
       </h1>
       <h2>Analyze Crypto Data</h2>
       <form onSubmit={fetchData}>
         <fieldset>
           <legend>Search Crypto Market</legend>
           <label htmlFor="ticker">
-            Enter stock ticker
+            Enter Crypto Ticker
             <input
               required
               name="ticker"
               id="ticker"
               type="text"
-              placeholder="SPY"
+              placeholder="$HBAR"
               value={ticker}
               onChange={(e) => setTicker(e.target.value)}
             />

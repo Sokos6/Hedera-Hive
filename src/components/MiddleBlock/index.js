@@ -1,17 +1,18 @@
-import { lazy } from "react";
-import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
-import Fade from "react-reveal/Fade";
+import {lazy} from 'react';
+import {Row, Col} from 'antd';
+import {withTranslation} from 'react-i18next';
+import Fade from 'react-reveal/Fade';
+import BetaAnalyze from '../../components/BetaAnalyze';
 
-import * as S from "./styles";
+import * as S from './styles';
 
-const Button = lazy(() => import("../../common/Button"));
+const Button = lazy(() => import('../../common/Button'));
 
-const MiddleBlock = ({ title, content, button, t }) => {
+const MiddleBlock = ({title, content, button, t}) => {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView({
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   return (
@@ -26,17 +27,17 @@ const MiddleBlock = ({ title, content, button, t }) => {
                 <Button
                   name="submit"
                   type="submit"
-                  onClick={() => scrollTo("mission")}
-                >
+                  onClick={() => scrollTo('mission')}>
                   {t(button)}
                 </Button>
               ) : (
-                ""
+                ''
               )}
             </Col>
           </S.ContentWrapper>
         </Fade>
       </Row>
+      <BetaAnalyze />
     </S.MiddleBlock>
   );
 };
