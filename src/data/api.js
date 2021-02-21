@@ -9,7 +9,7 @@ var options = {
     to_currency: 'USD',
   },
   headers: {
-    'x-rapidapi-key': 'ADD TOMORROW',
+    'x-rapidapi-key': '495d6eb0fdmsh4763db671e0903fp1addbcjsnf2c5df04e70b',
     'x-rapidapi-host': 'alpha-vantage.p.rapidapi.com',
   },
 };
